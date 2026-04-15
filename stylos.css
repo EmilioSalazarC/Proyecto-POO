@@ -1,151 +1,48 @@
-body {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  background: #fff;
-  color: #222;
-  margin: 0;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-#login {
-  max-width: 280px;
-  margin: 80px auto;
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  color: #667eea;
 }
 
-#login h2 { margin-bottom: 16px; }
-
-#login input {
-  display: block;
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-#nav {
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 8px;
-  margin-bottom: 16px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-#nav strong { margin-right: 8px; }
-
-#ruta {
-  font-size: 12px;
-  color: #666;
-  margin-bottom: 12px;
-}
-
-#ruta a {
-  color: #0066cc;
+.button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  text-decoration: underline;
+  transition: background 0.3s, transform 0.3s;
 }
 
-button {
-  padding: 6px 12px;
-  cursor: pointer;
-  background: #fff;
-  border: 1px solid #999;
-  font-size: 13px;
+.button:hover {
+  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  transform: translateY(-2px);
 }
 
-button:hover { background: #f0f0f0; }
-
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-top: 10px;
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 7px 10px;
-  text-align: left;
-}
-
-th { background: #f5f5f5; }
-
-tr:hover td { background: #fafafa; }
-
-input, select {
-  padding: 6px 8px;
-  border: 1px solid #ccc;
-  font-size: 13px;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.form-group {
-  margin-bottom: 10px;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 12px;
-  color: #555;
-}
-
-.acciones { display: flex; gap: 4px; }
-
-/* Modal */
-#modal {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.4);
+.navbar {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 999;
+  justify-content: space-between;
+  background: #667eea;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-#modal-box {
-  background: #fff;
-  padding: 24px;
-  width: 380px;
-  position: relative;
-  border: 1px solid #ccc;
+.footer {
+  text-align: center;
+  padding: 20px;
+  background: #764ba2;
+  color: white;
 }
-
-#modal-cerrar {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 2px 8px;
-  font-size: 12px;
-}
-
-#modal-body h3 { margin: 0 0 16px; }
-
-.form-actions {
-  display: flex;
-  gap: 8px;
-  margin-top: 16px;
-  justify-content: flex-end;
-}
-
-.badge {
-  display: inline-block;
-  padding: 2px 8px;
-  border-radius: 3px;
-  font-size: 11px;
-  border: 1px solid #ccc;
-}
-
-.badge-pendiente  { border-color: #f0ad4e; color: #8a5900; background: #fff8ec; }
-.badge-proceso    { border-color: #5bc0de; color: #1b6a7a; background: #f0fbff; }
-.badge-completado { border-color: #5cb85c; color: #2d6a2d; background: #f0fff0; }
-
-.totales {
-  display: flex;
-  gap: 24px;
-  margin: 12px 0;
-  font-size: 13px;
-}
-
-.totales span { font-weight: bold; }
