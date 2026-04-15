@@ -1,48 +1,79 @@
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+.login {
+    background: linear-gradient(135deg, #ffcc00, #ff6699);
+    animation: fadeIn 0.5s ease;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-h1, h2, h3 {
-  font-family: 'Arial', sans-serif;
-  color: #667eea;
+.navigation {
+    background: linear-gradient(90deg, #4b79a1, #283e51);
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.button {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.button:hover {
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
-  transform: translateY(-2px);
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s;
 }
 
-body {
-  font-family: 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-  color: #333;
+input:focus, select:focus {
+    border-color: #ff6699;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background: #667eea;
-  padding: 10px 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+.table {
+    width: 100%;
+    border-collapse: collapse;
 }
 
-.footer {
-  text-align: center;
-  padding: 20px;
-  background: #764ba2;
-  color: white;
+.table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    transition: background-color 0.4s;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    animation: modalFadeIn 0.5s ease;
+}
+
+.badge {
+    background: #ff6699;
+    color: white;
+    border-radius: 12px;
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes modalFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
