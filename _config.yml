@@ -1,0 +1,11 @@
+# Jekyll Configuration
+
+# Site settings
+url: "https://yourdomain.com"
+
+title: "Your Site Title"
+
+description: "A short description of your site"
+
+# Build settings
+source: .
