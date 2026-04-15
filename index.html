@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Taller</title>
+  <link rel="stylesheet" href="stylos.css">
+</head>
+<body>
+
+<div id="login">
+  <h2>Taller Mecánico</h2>
+  <input id="usuario" placeholder="Usuario"><br>
+  <input id="password" type="password" placeholder="Contraseña"><br>
+  <button onclick="login()">Entrar</button>
+  <p id="login-error" style="display:none;color:red">Usuario o contraseña incorrectos</p>
+</div>
+
+<div id="sistema" style="display:none">
+  <div id="nav">
+    <strong>Taller</strong>
+    <button onclick="cargarClientes()">Clientes</button>
+    <button onclick="cargarOrdenes()">Órdenes</button>
+    <button onclick="cargarPagos()">Pagos</button>
+    <button onclick="logout()">Salir</button>
+    <span id="rol-label"></span>
+  </div>
+
+  <div id="ruta"></div>
+  <div id="contenido"></div>
+</div>
+
+<div id="modal" style="display:none">
+  <div id="modal-box">
+    <button onclick="cerrarModal()" id="modal-cerrar">X</button>
+    <div id="modal-body"></div>
+  </div>
+</div>
+
+<script src="va.js"></script>
+</body>
+</html>
